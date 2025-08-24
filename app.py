@@ -337,27 +337,27 @@ INDEX_HTML = r"""
     <div class="grid">
       <div>
         <label>A 勤務（開始）</label>
-        <input type="text" name="A_start" value="00:00" placeholder="HH:MM" required>
+        <input type="text" name="A_start" value="01:00" placeholder="HH:MM" required>
       </div>
       <div>
         <label>A 勤務（終了）</label>
-        <input type="text" name="A_end" value="08:00" placeholder="HH:MM" required>
+        <input type="text" name="A_end" value="10:00" placeholder="HH:MM" required>
       </div>
       <div>
         <label>B 勤務（開始）</label>
-        <input type="text" name="B_start" value="08:00" placeholder="HH:MM" required>
+        <input type="text" name="B_start" value="09:00" placeholder="HH:MM" required>
       </div>
       <div>
         <label>B 勤務（終了）</label>
-        <input type="text" name="B_end" value="16:00" placeholder="HH:MM" required>
+        <input type="text" name="B_end" value="18:00" placeholder="HH:MM" required>
       </div>
       <div>
         <label>C 勤務（開始）</label>
-        <input type="text" name="C_start" value="16:00" placeholder="HH:MM" required>
+        <input type="text" name="C_start" value="17:00" placeholder="HH:MM" required>
       </div>
       <div>
         <label>C 勤務（終了）</label>
-        <input type="text" name="C_end" value="00:00" placeholder="HH:MM" required>
+        <input type="text" name="C_end" value="02:00" placeholder="HH:MM" required>
       </div>
     </div>
     <p class="muted">※ 終了が開始以下なら翌日跨ぎとして扱います（例: 16:00→00:00）。</p>
