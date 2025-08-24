@@ -144,7 +144,7 @@ def solve_month_schedule(
                     e.target_shifts = max_avail_per_person
                 specified += e.target_shifts
 
-        remaining = max(0, need_total_per_shift[s] - specified)
+        remaining = need_total_per_shift[s] - specified
         unspecified = [e for e in group if e.target_shifts is None]
 
         if remaining < 0:
@@ -153,6 +153,7 @@ def solve_month_schedule(
                 f"超過={-remaining}。指定を見直してください。"
             )
             # 超過を許容しつつ目的関数で近づける実装も可能だが、ここは警告のみ。
+            remaining = 0
 
         # 均等割（上限 max_avail_per_person を超えないように配分）
         if unspecified:
